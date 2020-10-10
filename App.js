@@ -1,11 +1,21 @@
 import * as React from "react";
-import { Text, View, StyleSheet } from "react-native";
-import Constants from "expo-constants";
+import {
+  Text,
+  View,
+  ActivityIndicator,
+  ProgressViewIOS,
+  Button,
+} from "react-native";
 
 export default function App() {
+  const onButtonPress = () => {
+    console.log(`${new Date().toLocaleTimeString()} button press`);
+  };
   return (
     <View style={{ padding: 50 }}>
-      <Text>Ready....</Text>
+      <ProgressViewIOS progress={0.5} />
+      <ActivityIndicator size="large" color="#61DBF" />
+      <Button title="click me" onPress={onButtonPress} />
     </View>
   );
 }
