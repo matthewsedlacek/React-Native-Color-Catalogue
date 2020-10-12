@@ -1,3 +1,6 @@
+Shows progress and status bars. Also shows dimensions
+
+
 import * as React from "react";
 import {
   Text,
