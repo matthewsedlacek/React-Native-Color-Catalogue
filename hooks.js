@@ -13,6 +13,7 @@ export const useColors = () => {
     }
   };
 
+  // Load Colors
   useEffect(() => {
     if (colors.length) return;
     loadColors();
